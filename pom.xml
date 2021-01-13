@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!--  바꾼정보가 다 들어가 있는것을 확인할 수 있다 -->
+  <groupId>webapp1</groupId>
+  <artifactId>webapp1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  
+  <build>
+    <plugins>
+    
+    <!-- 컴파일을 할때 사용 , maven-compiler-plugin -->
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      
+    <!-- 압축을 할때 활용, maven-war-plugin--> 
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+          <!-- 웹컨텐츠 모라고?! -->
+        </configuration>
+      </plugin>
+      
+      
+    </plugins>
+  </build>
+  
+ <dependencyManagement>
+	 <dependencies>
+	  	<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-framework-bom</artifactId>
+		    <version>5.2.8.RELEASE</version>
+		    <type>pom</type>
+		    <scope>import</scope>
+		</dependency>
+	  </dependencies>	  
+ </dependencyManagement>
+ 
+ 	<dependencies>
+	  	<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.30</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		</dependency>
+	  </dependencies>
+  
+</project>

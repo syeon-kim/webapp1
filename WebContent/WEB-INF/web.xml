@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>webapp1</display-name>
+
+
+	<!-- Root WebApplicationContext 설정 -->
+	<listener>
+		<!-- 이벤트가 발생했을때 처리해주는게 리스너 과연 어떤 이벤트를 청취한다느걸가 알수 없음 -->
+		<!-- 와스에서 웹 어플리케이션이 처음으로 실행되는 시점 -->
+		<!-- WebApplication이 WAS에 배치할 때 발생하는 이벤트를 처리하는객체(handler) 등록 WebApplication이 
+			WAS에 처음 실행 될때 실행되는 객체 등록 WAS는 항상실행중 -->
+		<!-- 웹 어플리케이션이 시작할떄!!!!!!!!!!1 딱 맞춰서 시작한다는 뜻 -->
+
+		<listener-class>
+			<!-- Root WebApplicationContext 생성 -->
+			<!-- ↓↓↓↓객체 -->
+			org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring/root/*.xml</param-value>
+	</context-param>
+	
+	<!-- WebApplicationContext 설정-->
+	<servlet>
+		<!-- WebApplicationContext 생성 -->
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring/dispatcher/*.xml</param-value>
+		</init-param>
+		<load-on-startup> 1 </load-on-startup>
+	</servlet>
+	<!-- http://localhost:8080/webapp1/xxx -->
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+</web-app>
