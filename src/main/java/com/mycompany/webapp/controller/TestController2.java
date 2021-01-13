@@ -1,5 +1,5 @@
 package com.mycompany.webapp.controller;
 
-public class TestController1 {
+public class TestController2 {
 
 }
