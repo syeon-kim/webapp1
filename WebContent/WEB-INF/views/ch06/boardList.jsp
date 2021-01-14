@@ -27,29 +27,11 @@
 				
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 					<div class="sector">
-						<h5> 헤더값읽기 </h5>
-						<div>
-							<a class="btn btn-info  btn-sm" href="method1"> 브라우저 정보얻기 </a>
-						</div>
+						<h5>게시물 목록</h5>
+						<div></div>
 					</div>					
+								
 					
-					
-					
-					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
-						<div>
-							<a class="btn btn-info  btn-sm" href="method3"> 쿠키 생성 및 보내기 </a>
-						</div>
-					</div>	
-					
-					
-					
-					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
-						<div>
-							<a class="btn btn-info  btn-sm" href="method5"> 쿠키 읽기 쿠기냠! </a>
-						</div>
-					</div>
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 				</div>
 			</div>

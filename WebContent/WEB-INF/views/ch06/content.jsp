@@ -27,29 +27,23 @@
 				
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 					<div class="sector">
-						<h5> 헤더값읽기 </h5>
+						<h5> Forward 테스트 </h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method1"> 브라우저 정보얻기 </a>
+							<a class="btn btn-info  btn-sm" href="forward"> 서버 내부에서 이동 </a>
 						</div>
 					</div>					
 					
 					
-					
 					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
+						<h5> Redirect 테스트 </h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method3"> 쿠키 생성 및 보내기 </a>
+							<a class="btn btn-info  btn-sm"  href="redirect"> 브라우저 재요청 </a>
+							<br/><br/>
+							<a class="btn btn-info  btn-sm"  href="login"> 로그인하기 </a>
+							
+							<a class="btn btn-info  btn-sm"  href="boardWrite"> 게시물 저장 </a>
 						</div>
 					</div>	
-					
-					
-					
-					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
-						<div>
-							<a class="btn btn-info  btn-sm" href="method5"> 쿠키 읽기 쿠기냠! </a>
-						</div>
-					</div>
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 				</div>
 			</div>
