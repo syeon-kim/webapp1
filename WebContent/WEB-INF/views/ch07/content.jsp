@@ -27,29 +27,27 @@
 				
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 					<div class="sector">
-						<h5> 헤더값읽기 </h5>
+						<h5> Model 객체를 이용한 스칼라값 전달 </h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method1"> 브라우저 정보얻기 </a>
+							<a class="btn btn-info  btn-sm" href="method1"> 데이터전달 </a>
 						</div>
 					</div>					
 					
-					
-					
 					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
+						<h5> Model 객체를 이용한 데이터 전달 </h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method3"> 쿠키 생성 및 보내기 </a>
-						</div>
-					</div>	
-					
-					
-					
-					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
-						<div>
-							<a class="btn btn-info  btn-sm" href="method5"> 쿠키 읽기 쿠기냠! </a>
+							<a class="btn btn-info  btn-sm" href="method2"> 데이터전달 </a>
 						</div>
 					</div>
+					
+					<div class="sector">
+						<h5> Model 객체를 이용한 데이터 전달 </h5>
+						<div>
+							<a class="btn btn-info  btn-sm" href="method3"> 데이터전달 </a>
+						</div>
+					</div>
+					
+					
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 				</div>
 			</div>
