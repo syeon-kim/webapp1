@@ -97,7 +97,7 @@ public class Ch05Controller {
 		return "ch05/content";
 	}
 	
-	//얜왜 두개밖에 못읽지
+	//얜왜 두개밖에 못읽지 //읽을 쿠키가 없으면에러남
 	@RequestMapping("/method5")//쿠키를 만들어서 브라우저를 보내라
 	public String method5(
 			@CookieValue String memberId,

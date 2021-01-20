@@ -24,10 +24,13 @@
 				<jsp:include page="/WEB-INF/views/include/menu.jsp"></jsp:include>
 				
 				<div class="content">
+				
 					<div class="sector">
 						<h5> GET방식 데이터 전달 </h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method4?param1=문자열&param2=5&param3=3.14&param4=true&param5=2021-01-14"> 데이터 전달
+							<a class="btn btn-info  btn-sm"
+							href="method4?param1=문자열&param2=5&param3=3.14&param4=true&param5=2021-01-14"> 
+							데이터 전달
 							</a>
 						</div>
 					</div>					

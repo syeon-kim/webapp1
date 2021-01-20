@@ -38,7 +38,7 @@
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
-		<!-- 아스다가 들어가면 jsp가 호출이 안된다 불가능하다 -->
+		
 	</servlet-mapping>
 	
 	
@@ -55,7 +55,7 @@
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern> /*</url-pattern>
-		
+		<!-- 아스다가 들어가면 jsp가 호출이 안된다 불가능하다 -->
 	</filter-mapping>
 	
 </web-app>

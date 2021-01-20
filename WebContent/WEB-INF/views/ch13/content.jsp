@@ -1,4 +1,5 @@
 <%@ page  contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
@@ -26,30 +27,53 @@
 				<div class="content">
 				
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
-					<div class="sector">
-						<h5> 헤더값읽기 </h5>
-						<div>
-							<a class="btn btn-info  btn-sm" href="method1"> 브라우저 정보얻기 </a>
-						</div>
-					</div>					
-					
+							
 					
 					
 					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 보내기 </h5>
+						<h5> 의존성 주입</h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method3"> 쿠키 생성 및 보내기 </a>
+						<!-- 뭔가 이상한대 주소가? 잘 이해하보자 이게 맞으닌까 -->
+							<a class="btn btn-success btn-sm" href="service1"> Ch13Service1 사용 </a>
+							<a class="btn btn-success btn-sm" href="service2"> Ch13Service2 사용 </a> 
+
 						</div>
 					</div>	
 					
 					
+					<div class="sector">
+						<h5> XML을 이용한 Setter 주입</h5>
+						<div>
+							<a class="btn btn-success btn-sm" href="service3"> Ch13Service3 사용 </a> 
+							<a class="btn btn-success btn-sm" href="service4"> Ch13Service4 사용 </a> 
+						</div>
+					</div>	
+					
 					
 					<div class="sector">
-						<h5> HttpServletResponse를 이용해서 쿠키 읽기 </h5>
+						<h5> DAO -> Service ->Controller </h5>
 						<div>
-							<a class="btn btn-info  btn-sm" href="method5"> 쿠키 읽기 쿠기냠! </a>
+							<a class="btn btn-success btn-sm" href="service5"> Ch13Service5 사용 </a> 
+					
 						</div>
 					</div>
+					
+					<div class="sector">
+						<h5> 인터페이스 타입 주입 </h5>
+						<div>
+							<a class="btn btn-success btn-sm" href="service6"> Ch13Service6 사용 </a> 
+					
+						</div>
+					</div>
+					
+					<div class="sector">
+						<h5> properties 값주입 </h5>
+						<div>
+							<a class="btn btn-success btn-sm" href="fileupload"> 자주 변경될수 있는 값 주입 </a> 
+					
+						</div>
+					</div>
+					
 				<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 				</div>
 			</div>
